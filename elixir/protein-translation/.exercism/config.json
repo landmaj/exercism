@@ -1,0 +1,26 @@
+{
+  "authors": [
+    "DoggettCK"
+  ],
+  "contributors": [
+    "angelikatyborska",
+    "Cohen-Carlisle",
+    "devonestes",
+    "neenjaw",
+    "nwshane",
+    "sotojuan"
+  ],
+  "files": {
+    "solution": [
+      "lib/protein_translation.ex"
+    ],
+    "test": [
+      "test/protein_translation_test.exs"
+    ],
+    "example": [
+      ".meta/example.ex"
+    ]
+  },
+  "blurb": "Translate RNA sequences into proteins.",
+  "source": "Tyler Long"
+}
