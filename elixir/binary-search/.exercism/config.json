@@ -1,0 +1,31 @@
+{
+  "authors": [
+    "bernardoamc"
+  ],
+  "contributors": [
+    "angelikatyborska",
+    "Cohen-Carlisle",
+    "devonestes",
+    "lpil",
+    "martinsvalin",
+    "neenjaw",
+    "parkerl",
+    "screamingjungle",
+    "sotojuan",
+    "waiting-for-dev"
+  ],
+  "files": {
+    "solution": [
+      "lib/binary_search.ex"
+    ],
+    "test": [
+      "test/binary_search_test.exs"
+    ],
+    "example": [
+      ".meta/example.ex"
+    ]
+  },
+  "blurb": "Implement a binary search algorithm.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Binary_search_algorithm"
+}
