@@ -1,0 +1,29 @@
+{
+  "authors": [
+    "zporter"
+  ],
+  "contributors": [
+    "aifrak",
+    "amencarini",
+    "angelikatyborska",
+    "Cohen-Carlisle",
+    "devonestes",
+    "neenjaw",
+    "parkerl",
+    "sotojuan"
+  ],
+  "files": {
+    "solution": [
+      "lib/say.ex"
+    ],
+    "test": [
+      "test/say_test.exs"
+    ],
+    "example": [
+      ".meta/example.ex"
+    ]
+  },
+  "blurb": "Given a number from 0 to 999,999,999,999, spell out that number in English.",
+  "source": "A variation on the JavaRanch CattleDrive, Assignment 4",
+  "source_url": "https://coderanch.com/wiki/718804"
+}

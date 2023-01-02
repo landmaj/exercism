@@ -1,0 +1,27 @@
+{
+  "authors": [
+    "DoggettCK"
+  ],
+  "contributors": [
+    "angelikatyborska",
+    "Cohen-Carlisle",
+    "devonestes",
+    "neenjaw",
+    "PatrickMcSweeny",
+    "sotojuan"
+  ],
+  "files": {
+    "solution": [
+      "lib/twelve_days.ex"
+    ],
+    "test": [
+      "test/twelve_days_test.exs"
+    ],
+    "example": [
+      ".meta/example.ex"
+    ]
+  },
+  "blurb": "Output the lyrics to 'The Twelve Days of Christmas'.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/The_Twelve_Days_of_Christmas_(song)"
+}
