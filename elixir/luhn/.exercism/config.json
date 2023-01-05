@@ -1,0 +1,30 @@
+{
+  "authors": [
+    "dalexj"
+  ],
+  "contributors": [
+    "angelikatyborska",
+    "Cohen-Carlisle",
+    "devonestes",
+    "lpil",
+    "neenjaw",
+    "parkerl",
+    "sotojuan",
+    "stfnsr",
+    "waiting-for-dev"
+  ],
+  "files": {
+    "solution": [
+      "lib/luhn.ex"
+    ],
+    "test": [
+      "test/luhn_test.exs"
+    ],
+    "example": [
+      ".meta/example.ex"
+    ]
+  },
+  "blurb": "Given a number determine whether or not it is valid per the Luhn formula.",
+  "source": "The Luhn Algorithm on Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Luhn_algorithm"
+}

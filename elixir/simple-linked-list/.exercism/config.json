@@ -1,0 +1,31 @@
+{
+  "authors": [
+    "lpil"
+  ],
+  "contributors": [
+    "angelikatyborska",
+    "AnilRedshift",
+    "Cohen-Carlisle",
+    "devonestes",
+    "mlevesquedion",
+    "neenjaw",
+    "parkerl",
+    "percygrunwald",
+    "sotojuan",
+    "czrpb"
+  ],
+  "files": {
+    "solution": [
+      "lib/linked_list.ex"
+    ],
+    "test": [
+      "test/linked_list_test.exs"
+    ],
+    "example": [
+      ".meta/example.ex"
+    ]
+  },
+  "blurb": "Write a simple linked list implementation that uses Elements and a List.",
+  "source": "Inspired by 'Data Structures and Algorithms with Object-Oriented Design Patterns in Ruby', singly linked-lists.",
+  "source_url": "https://web.archive.org/web/20160731005714/http://brpreiss.com/books/opus8/html/page96.html"
+}
