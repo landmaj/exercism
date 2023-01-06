@@ -1,0 +1,36 @@
+{
+  "authors": [
+    "petehuang"
+  ],
+  "contributors": [
+    "andrewsardone",
+    "angelikatyborska",
+    "Cohen-Carlisle",
+    "dalexj",
+    "devonestes",
+    "drueck",
+    "jiegillet",
+    "jinyeow",
+    "lpil",
+    "neenjaw",
+    "parkerl",
+    "rubysolo",
+    "sotojuan",
+    "Teapane",
+    "waiting-for-dev"
+  ],
+  "files": {
+    "solution": [
+      "lib/sieve.ex"
+    ],
+    "test": [
+      "test/sieve_test.exs"
+    ],
+    "example": [
+      ".meta/example.ex"
+    ]
+  },
+  "blurb": "Use the Sieve of Eratosthenes to find all the primes from 2 up to a given number.",
+  "source": "Sieve of Eratosthenes at Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes"
+}
