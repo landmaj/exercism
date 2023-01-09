@@ -13,36 +13,32 @@ defmodule Spiral do
     |> Enum.chunk_every(dimension)
   end
 
-  defp iterate(d) do
-    iterate([], d ** 2, {-1, 0}, nil, {-1, 0}, {d - 1, 0}, {d - 1, d - 1}, {0, d - 1})
+  defp iterate(acc \\ [], dimension, point \\ {0, 0}, vector \\ {1, 0})
+
+  defp iterate(acc, d, p, v) do
+    acc = [p | acc]
+
+    cond do
+      move(p, v) |> valid?(d, acc) ->
+        iterate(acc, d, move(p, v), v)
+
+      turn_and_move(p, v) |> valid?(d, acc) ->
+        iterate(acc, d, turn_and_move(p, v), turn(v))
+
+      true ->
+        Enum.reverse(acc)
+    end
   end
 
-  defp iterate(acc, 0, _, _, _, _, _, _) do
-    acc |> Enum.reverse()
-  end
+  defp move({x1, y1}, {x2, y2}), do: {x1 + x2, y1 + y2}
 
-  defp iterate(acc, c, p = {x, y}, _d, tl, tr, br, bl) when p == tl do
-    np = {x + 1, y}
-    iterate([np | acc], c - 1, np, {1, 0}, {x + 1, y + 1}, tr, br, bl)
-  end
+  defp turn_and_move(p, v), do: v |> turn() |> then(&move(p, &1))
 
-  defp iterate(acc, c, p = {x, y}, _d, tl, tr, br, bl) when p == tr do
-    np = {x, y + 1}
-    iterate([np | acc], c - 1, np, {0, 1}, tl, {x - 1, y + 1}, br, bl)
-  end
+  defp valid?({x, y}, d, _acc) when x < 0 or x >= d or y < 0 or y >= d, do: false
+  defp valid?(point, _d, acc), do: point not in acc
 
-  defp iterate(acc, c, p = {x, y}, _d, tl, tr, br, bl) when p == br do
-    np = {x - 1, y}
-    iterate([np | acc], c - 1, np, {-1, 0}, tl, tr, {x - 1, y - 1}, bl)
-  end
-
-  defp iterate(acc, c, p = {x, y}, _d, tl, tr, br, bl) when p == bl do
-    np = {x, y - 1}
-    iterate([np | acc], c - 1, np, {0, -1}, tl, tr, br, {x + 1, y - 1})
-  end
-
-  defp iterate(acc, c, {x, y}, d = {dx, dy}, tl, tr, br, bl) do
-    np = {x + dx, y + dy}
-    iterate([np | acc], c - 1, np, d, tl, tr, br, bl)
-  end
+  defp turn({1, 0}), do: {0, 1}
+  defp turn({0, 1}), do: {-1, 0}
+  defp turn({-1, 0}), do: {0, -1}
+  defp turn({0, -1}), do: {1, 0}
 end
