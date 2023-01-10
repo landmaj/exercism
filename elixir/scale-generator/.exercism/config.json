@@ -1,0 +1,24 @@
+{
+  "authors": [
+    "DoggettCK"
+  ],
+  "contributors": [
+    "angelikatyborska",
+    "Cohen-Carlisle",
+    "devonestes",
+    "neenjaw",
+    "sotojuan"
+  ],
+  "files": {
+    "solution": [
+      "lib/scale_generator.ex"
+    ],
+    "test": [
+      "test/scale_generator_test.exs"
+    ],
+    "example": [
+      ".meta/example.ex"
+    ]
+  },
+  "blurb": "Generate musical scales, given a starting note and a set of intervals."
+}
